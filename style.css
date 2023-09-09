@@ -58,7 +58,7 @@ body{
     align-items: center;
     min-height: 100svh;
     min-width: 100svw;
-    margin: 8px 0px;
+    margin: 40px 0px;
     overflow-x: hidden;
     background-color: var(--clr-neutral-400);
 }
