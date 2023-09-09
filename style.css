@@ -1,0 +1,129 @@
+:root{
+    --clr-primary-200: hsl(31, 77%, 52%);
+    --clr-primary-400: hsl(184, 100%, 22%);
+    --clr-primary-600: hsl(179, 100%, 13%);
+
+    --clr-neutral-200: hsla(0, 0%, 100%, 0.75);
+    --clr-neutral-400: hsl(0, 0%, 95%);
+
+    --ff-base: "Lexend Deca", sans-serif;
+    --ff-title: "Big Shoulders Display", cursive;
+
+    --fw--regular: 400;
+    --fw--bold: 700;
+
+    --fs--p: 15px;
+    --fs--headings: 40px;
+    --fs--buttons: 15px;
+}
+
+*{
+    box-sizing: border-box;
+    word-break: break-word;
+}
+
+* > h1{
+    color: var(--clr-neutral-400);
+    font-family: var(--ff-title);
+    font-size: var(--fs--headings);
+    font-weight: var(--fw--bold);
+    margin: 30px 0px 10px 0px;
+}
+
+* > h2{
+    color: var(--clr-neutral-400);
+    font-family: var(--ff-title);
+    font-size: var(--fs--headings);
+    font-weight: var(--fw--bold);
+    margin: 30px 0px 10px 0px;
+}
+
+* > p{
+    color: var(--clr-neutral-200);
+    font-family: var(--ff-base);
+    font-size: var(--fs--p);
+    font-weight: var(--fw--regular);
+    line-height: 1.6rem;
+    padding-bottom: 10px;
+}
+
+img{
+    width: 3.9rem;
+    height: 2.3rem;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100svh;
+    min-width: 100svw;
+    margin: 8px 0px;
+    overflow-x: hidden;
+    background-color: var(--clr-neutral-400);
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: .6rem;
+}
+
+.sedan_card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    width: 21rem;
+    height: 29rem;
+    padding: 0px 50px 0px 50px;
+    background-color: var(--clr-primary-200);
+    color: var(--clr-primary-200);
+}
+
+.suvs_card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    width: 21rem;
+    height: 29rem;
+    padding: 0px 50px 0px 50px;
+    background-color: var(--clr-primary-400);
+    color: var(--clr-primary-400);
+}
+
+.luxury_card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    width: 21rem;
+    height: 29rem;
+    padding: 0px 50px 0px 50px;
+    background-color: var(--clr-primary-600);
+    color: var(--clr-primary-600);
+}
+
+.learn_more{
+    width: 9.5rem;
+    height: 3.2rem;
+    font-family: var(--ff-base);
+    font-size: var(--fs--buttons);
+    background-color: var(--clr-neutral-400);
+    border-radius: 1.5rem;
+    border: hidden;
+    color: inherit;
+}
+
+.learn_more:hover{
+    cursor: pointer;
+    border-color: var(--clr-neutral-400);
+    border: solid;
+    border-width: .15rem;
+    background-color: transparent;
+    color: var(--clr-neutral-400);
+}
