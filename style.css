@@ -12,9 +12,16 @@
     --fw--regular: 400;
     --fw--bold: 700;
 
+    /*mobile font sizes*/
+
     --fs--p: 15px;
     --fs--headings: 40px;
     --fs--buttons: 15px;
+
+    /*desktop font sizes*/
+    --fs--dp: 13.5px;
+    --fs--dheadings: 38px;
+    --fs--dbuttons: 13px;
 }
 
 *{
@@ -126,4 +133,58 @@ body{
     border-width: .15rem;
     background-color: transparent;
     color: var(--clr-neutral-400);
+}
+
+@media (min-width: 700px){
+    * > h1{
+        font-size: var(--fs--dheadings);
+
+    }
+
+    * > h2{
+        font-size: var(--fs--dheadings);
+    }
+
+    * > p{
+        font-size: var(--fs--dp);
+        line-height: 1.45rem;
+        padding-bottom: 70px;
+    }
+
+    img{
+        width: 3.5rem;
+        height: 2.1rem;
+        margin-top: 0px;
+    }
+
+    body{
+        overflow: hidden;
+        margin: 0px;
+    }
+    
+    .card{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .sedan_card{
+        width: 18rem;
+        height: 30rem;
+    }
+
+    .suvs_card{
+        width: 18rem;
+        height: 30rem;
+    }
+
+    .luxury_card{
+        width: 18rem;
+        height: 30rem;
+    }
+
+    .learn_more{
+        width: 8.5rem;
+        height: 2.8rem;
+        font-size: var(--fs--dbuttons);
+    }
 }
